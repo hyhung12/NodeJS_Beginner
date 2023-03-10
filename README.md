@@ -4,3 +4,4 @@
 
 
 nodejs is neither a language nor framework, it's simply an environment
+express = framework on node, help reduce repetitive code
