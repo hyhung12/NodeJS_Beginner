@@ -12,4 +12,6 @@ express = framework on node, help reduce repetitive code
 
     npm install express
     const express = require('express')  -> require only in nodejs for loading modules
-    const app = listen(3000) -> listen TCP connections on port 3000
+    const app = listen(3000, function(){
+    console.log('server started on port 3000'}); -> listen TCP connections on port 3000
+    // callback function: return sth after performing action
