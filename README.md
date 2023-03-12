@@ -42,6 +42,7 @@ Body parser: helps extract body (data) of HTML request
         // console.log(req.body.num1)
         var num1 = Number(req.body.num1)
         
+Build a simple website
 
         // npm install -g nodemon -> Install nodemon globally
         npm init 
