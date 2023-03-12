@@ -41,4 +41,26 @@ Body parser: helps extract body (data) of HTML request
         app.use(bodyParser.urlencoded({extended: true})
         // console.log(req.body.num1)
         var num1 = Number(req.body.num1)
-    
+        
+
+        // npm install -g nodemon -> Install nodemon globally
+        npm init 
+        npm install express
+        
+        const express = require('express');
+        const bodyParser = require('body-parser');
+        const app = express();
+        
+        app.use(bodyParser.urlencoded({extended:true}));
+        
+        app.get('/', function(req,res){
+        res.sendFile(__dirname + '/index.html');});
+        
+        app.post('/', function(req,res){
+        var n1 = res.body.num1;
+        res.send('here is the result' + n1);});
+        
+        
+        app.listen(3000, function(req,res){
+        console.log('server on port 3000');});
+        
