@@ -59,7 +59,9 @@ Build a simple website
         res.sendFile(__dirname + '/index.html');});
         
         app.post('/', function(req,res){
-        var n1 = res.body.num1;
+        var n1 = Number(res.body.num1); or var n1 = parseFloat(res.body.num1);
+        // parseFloat specifically converts a string to a floating-point number, 3.14 is a number 5.2 -> 3.14
+        // Number converts a variety of data types to a numbe
         res.send('here is the result' + n1);});
         
         
