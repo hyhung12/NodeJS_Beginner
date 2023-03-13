@@ -47,6 +47,7 @@ Build a simple website
         // npm install -g nodemon -> Install nodemon globally
         npm init 
         npm install express
+        npm version express
         
         const express = require('express');
         const bodyParser = require('body-parser');
@@ -65,3 +66,5 @@ Build a simple website
         app.listen(3000, function(req,res){
         console.log('server on port 3000');});
         
+Middleware: function or process that helps handle incoming requests. In other words, it acts like a helper that help a child plays the game        
+app.use: mount the middleware at the path
