@@ -3,7 +3,7 @@
     var heyb = prompt('what is this?:')
     hãng -> phân phối -> vendor/SI -> EU
 
-Node.js is neither a language nor framework, it's simply an environment
+Node.js is neither a language nor framework, it's simply an environment<br>
 npm (Node Package Manager) containing a lot of open-source packages
 
     npm init: create package.json
