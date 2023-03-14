@@ -35,7 +35,7 @@ Build a simple website
     const bodyParser = require('body-parser');
     const app = express();
 
-    app.use(bodyParser.urlencoded({extended:true}));
+    app.use(bodyParser.urlencoded({extended:true})); // mount the middleware at the path
 
     app.get('/', function(req,res){
     res.sendFile(__dirname + '/index.html');});
@@ -50,5 +50,7 @@ Build a simple website
     console.log('server on port 3000');});
         
 - **Middleware: function or process helping handle incoming requests.**
-- **Analogy -> acts like a helper that help a child plays the game**<br>     
-**app.use: mount the middleware at the path**
+- **Analogy -> acts like a helper that help a child plays the game**
+- **req and res objects are generated automatically in Express.js when a client makes a request to the server**
+- **These 2 objects are also passed automatically to the callback function**    
+
