@@ -50,7 +50,26 @@ Build a simple website
     console.log('server on port 3000');});
         
 - **Middleware: function or process helping handle incoming requests.**
-- **Analogy -> acts like a helper that help a child plays the game**
+- **Analogy -> acts like a helper that help a child plays the game**<br>
 - **req and res objects are generated automatically in Express.js when a client makes a request to the server**
-- **These 2 objects are also passed automatically to the callback function**    
+- **These 2 objects are also passed automatically to the callback function**  
+- **Asynchronous in Node.js: perform multiple tasks concurrently -> need to use callback function which will be called when task is done**
+- **Analogy -> cooking rice while working on the vegetables part**<br>
+
+**Connecting to a website by using https**
+
+    const https = require('https');
+    
+    app.get('/', function(req, res){
+    const url = ''
+    // https.get() generates an http.IncomingMessage object aka res argument in the callback function executed when the response is received.
+    https.get(url, function(response){
+        console.log(response.statusCode);
+    
+        response.on('data', function(data){
+        // console.log(data) -> Data in form of hexadecimal
+        const weatherData = JSON.parse(data) 
+        // JSON.parse -> parse a JSON string and convert it into JS object(dictionary)
+        const temp = weatherData.main.temp
+        const weatherDescription = weatherData.weather[0].description
 
