@@ -62,7 +62,8 @@ Build a simple website
     
     app.get('/', function(req, res){
     const url = ''
-    // https.get() generates an http.IncomingMessage object aka res argument in the callback function executed when the response is received.
+    // https.get() generates an http.IncomingMessage object aka "response" argument
+    // in the callback function executed when the response is received.
     https.get(url, function(response){
         console.log(response.statusCode);
     
