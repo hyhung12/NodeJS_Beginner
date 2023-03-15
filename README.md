@@ -73,3 +73,8 @@ Build a simple website
         const temp = weatherData.main.temp
         const weatherDescription = weatherData.weather[0].description
 
+    
+    res.write('a')
+    res.write('b')
+    res.send()
+
