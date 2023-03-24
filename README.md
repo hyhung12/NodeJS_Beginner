@@ -5,6 +5,7 @@
     var heyb = prompt('what is this?:')
     hãng -> phân phối -> vendor/SI -> EU
     lora - physical layer technology, lorawan - network layer protocol
+    RESTful -> use HTTP verbs + specific routes to access resources
 
 **Node.js: neither a language nor framework, it's simply an environment**<br>
 **npm (Node Package Manager) containing a lot of open-source packages**
