@@ -85,3 +85,13 @@ Build a simple website
 Heroku let us rent their server for free up to 5 projects
 
     app.listen(process.env.PORT || 3000, function()
+    
+###**RESTful**
+| HTTP Verbs | /articles | /articels/practice-yeah1|
+|-|-|-|
+|GET|Retrieves all the articles| Retrive the article on practice-yeah1|
+|POST|Creates a new article||
+|PUT||Updates the article on practice-yeah1|
+|PATCH||Updates the article on practice-yeah1|
+|DELETE|Delete all the articles|Delete the article on practice-yeah1|
+ 
