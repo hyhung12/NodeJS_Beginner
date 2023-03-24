@@ -86,7 +86,7 @@ Heroku let us rent their server for free up to 5 projects
 
     app.listen(process.env.PORT || 3000, function()
     
-###**RESTful**
+### **RESTful**
 | HTTP Verbs | /articles | /articels/practice-yeah1|
 |-|-|-|
 |GET|Retrieves all the articles| Retrive the article on practice-yeah1|
