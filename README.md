@@ -19,15 +19,16 @@
     res.sendFile(__dirname + '/index.html');
     
 **Body parser: helps extract body (data) of HTML request -> Parse the request body, extract the data and populate the req.body**
-    '''
-    // populate: add record to a database
-    // extended: True -> allow parsing of complex objects and array
-    // npm install body-parser
-    const bodyParser = require('body-parser');
-    app.use(bodyParser.urlencoded({extended: true})
-    // console.log(req.body.num1)
-    var num1 = Number(req.body.num1)
-    '''
+
+```
+// populate: add record to a database
+// extended: True -> allow parsing of complex objects and array
+// npm install body-parser
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({extended: true})
+// console.log(req.body.num1)
+var num1 = Number(req.body.num1)
+```
         
 Build a simple website
 
