@@ -6,17 +6,10 @@
     hãng -> phân phối -> vendor/SI -> EU
     lora - physical layer technology, lorawan - network layer protocol
     RESTful -> use HTTP verbs + specific routes to access resources
-
-**Node.js: neither a language nor framework, it's simply an environment**<br>
-**npm (Node Package Manager) containing a lot of open-source packages**
-
-    npm init -> create package.json
     
-**Express.js: web application framework to simplify the process of creating server-side web applications**
     
     npm install -g nodemon -> restart node application (server) whenever the code is changed
 
-    res.sendFile(__dirname + '/index.html');
     
 **Body parser: helps extract body (data) of HTML request -> Parse the request body, extract the data and populate the req.body**
 
@@ -55,8 +48,6 @@ Build a simple website
     app.listen(3000, function(req,res){
     console.log('server on port 3000');});
         
-- **Middleware: function or process helping handle incoming requests.**
-- **Analogy -> acts like a helper that help a child plays the game**<br>
 - **req and res objects are generated automatically in Express.js when a client makes a request to the server**
 - **These 2 objects are also passed automatically to the callback function**  
 - **Asynchronous in Node.js: perform multiple tasks concurrently -> need to use callback function which will be called when task is done**
@@ -89,12 +80,3 @@ Heroku let us rent their server for free up to 5 projects
 
     app.listen(process.env.PORT || 3000, function()
     
-### **RESTful**
-| HTTP Verbs | /articles | /articels/practice-yeah1|
-|-|-|-|
-|GET|Retrieves all the articles| Retrive the article on practice-yeah1|
-|POST|Creates a new article||
-|PUT||Updates the article on practice-yeah1|
-|PATCH||Updates the article on practice-yeah1|
-|DELETE|Delete all the articles|Delete the article on practice-yeah1|
- 
